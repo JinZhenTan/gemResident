@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="function.js" defer></script> 
+    <title>GEM Residences</title>
+</head>
+
+<body >
+    
+    <!-- advertisement -->
+
+        <div class="adBackground" id="advertisement" onclick="closeAd()">
+
+
+            <div class="ad">
+                <p class="closeAd" onclick="closeAd()">X</p>  
+                <img src="image/ad.png" width="40%" height="fit-content" class="adImage">
+                <div class="adButtonDiv">
+                    <button onclick="callWhatsapp()" class="btn-advertisement">
+                        Book your dream <br> home now! 
+                        <img src="image/whatsapp.png" width="10%" class="whatsappIcon">
+                    </button>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+
+
+
+    <!-- advertisement End-->
+
+
+    <!-- Whatsapp Introduction -->
+
+    <div class="whatsappBackground" id="whatsappBackground" onclick="closeWhatsapp()" >
+
+
+        <div class="whatsapp-contact"> 
+
+            <p class="closeWhatsappIntro" onclick="closeWhatsapp()">X</p>  
+
+
+        <div class="e-brochure-description">
+            <h1>GEM Resident E-Brochure</h1>
+            <p>Get your <b>Ultimate Customized E-Brochure </b>just a click away. Exclusive e-brochure with<b> all details & amazing high ROI investment plan.</b> Your privacy is our priority.</p>
+
+        </div>
+
+                <button onclick="callWhatsapp()" class="btn-whatsapp">
+                    Whatsapp Us
+                    <img src="image/whatsapp.png" width="12px" class="whatsappIcon">
+                </button>
+            
+            
+            </div>  
+    </div>
+
+<!-- End Whatsapp Introduction -->
+
+
+
+<!-- Whatsapp icon on the bottom of the page -->
+
+    <img src="image/whatsapp.png" class="whatsappIconBottom" onclick="callWhatsapp()">
+
+
+<!-- End Whatsapp icon on the bottom of the page -->
+
+
+
+
+
+
+
+
+
+
+    <header  id="header">
+        <nav class="headerNav" id="headerNav">
+            <a  onclick="scrollToSection('welcomeDiv')">Home</a>
+            <a  onclick="scrollToSection('place')">Place</a>
+            <a  onclick="scrollToSection('factsheet')">Factsheet</a>
+            <a  onclick="scrollToSection('welcomeDiv')"><img src="image/logo.png" width="100px" alt="Logo"></a>
+            <a  onclick="scrollToSection('gallery')">Gallery</a>
+            <a  onclick="scrollToSection('layout')">Layout</a>
+            <a  onclick="openWhatsapp()" >ContactUs</a>
+        </nav>  
+
+
+    </header>
+    
+       
+        <div id="welcomeDiv" class="welcomeDiv">
+
+                <img src="image/poster.png" width="40%" height="auto" class="poster" alt="Poster">
+
+
+            <div class="welcomeDescDiv">
+                <p class="welcome">
+                    Welcome to Perai <br><br>   GEM Residences
+                </p>
+
+                <p class="welcomeDesc">
+                    GEM Residences is primed to bring a new standard of living to Prai, 
+                    Penang by offering a range of well-designed modern living spaces for a wholesome lifestyle experience. 
+                    Enjoy the magnificent view from the Sky Park, and delight in moments shared with your loved ones in your own personal space.
+                </p>
+                
+                <button class="btnLearnMore" onclick="openWhatsapp()"> <b>Learn More</b></button>
+
+                <div class="smallInfoDiv">
+                    <p class="smallInfo1"> <span class="smallInfo">489</span> <br> <span class="smallInfoName">Total Unit</span></p>
+                    <p class="smallInfo1"> <span class="smallInfo">2 - 3</span> <br> <span class="smallInfoName">Car Park</span></p>
+                    <p class="smallInfo1"> <span class="smallInfo">2 Option</span> <br> <span class="smallInfoName" id="place">Studio and Bedroom</span></p>
+                </div>
+
+
+            </div>
+
+        </div>  
+        
+
+
+
+
+        <h1 class="placeTitle" >
+            THE ULTIMATE
+            ADDRESS IN PERAI,
+            PENANG</h1 >
+    
+        <div class="place" id="place">
+    
+    
+            <p class="placeDescription" >
+                Situated ideally in the Prai area, GEM Residences is surrounded by amenities that offer its residents complete convenience. 
+                Located next to the Northern Region's largest shopping mall, 
+                and only 4km from the Penang Bridge makes this development one to look out for as the ideal lifestyle destination of Prai, Penang.
+            </p>
+    
+            <iframe  class="iframeMap"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1022.800592994535!2d100.397327!3d5.380029!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac665742da1df%3A0xe571b7c9c741c77f!2sGEM%20Residences%20Penang!5e1!3m2!1szh-CN!2smy!4v1732677245217!5m2!1szh-CN!2smy" 
+            width="50%" 
+            height="500" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    
+    
+        </div>
+
+
+
+
+
+
+
+        <div class="contact-background">
+            <div class="contact-background-color">
+                <h1 class="contact-background-Title">Contact Us Now</h1>
+                <p class="contact-background-Desc">Get your dream home with one click</p>
+                <img src="image/downArrow.gif" width="3%"><br><br>
+                <button onclick="openWhatsapp()" class="btn-contact-background" >Whatsapp Us <img src="image/whatsapp.png" width="12%" class="btn-contact-whatsapp"> </button>                <p id="factsheet"></p>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h1 class="highlightsTitle">  HIGHLIGHTS </h1>
+        
+        <h1 id="highlights"></h1>
+
+    <div class="highlightsDiv" >
+        
+        <p class="highlightsDesc">
+            GEM Residences is a complete lifestyle development that offers a wide variety of facilities and amenities at the Sky Park on 38th floor with viewing pavilion, 
+            sky lounge, jacuzzi & jogging track and an Olympic ocean pool, signature gym and KTV room at the Sports & Recreational Club on 8th floor.
+             Offering you quality experiences here at GEM Residences, this development ensures that you are equipped with everything that you need and more.
+
+
+             <div class="highlightsPointDiv">
+                <div class="highlightsPoint"><img src="image/freeHold.png" width="30%" class="freeHold"><br> Free Hold</div>
+                <div class="highlightsPoint"><img src="image/dateComplete.png" width="30%" class="freeHold">Complete Date: <br>Q2 2024</div>
+                <div class="highlightsPoint1"><img src="image/roomSize.png" width="30%" class="freeHold">Studio : 441 SQFT <br><br>Bedroom : <br>1,050 SQFT - 1,445 SQFT</div>
+                <div class="highlightsPoint"><img src="image/towerIcon.png" width="30%" class="freeHold">Tower1 (230unit)  Tower2 (259unit)</div>
+            </div>
+        </p>
+    </div>
+        
+
+
+
+
+
+
+
+
+
+
+    <div class="factsheet" >
+        <h1 class="factsheetTitle">Factsheet</h1>  
+
+        <table class="factsheetTable">
+            <tr class="tableTitle">
+                <td class="a">PROJECT</td>
+                <td class="b">GEM RESIDENCES</td>
+            </tr>
+    
+            <tr class="evenRow">
+                <td>DEVELOPER</td>
+                <td>REGATA MAJU SDN BHD</td>
+            </tr>
+    
+            <tr class="oddRow">
+                <td>LOCATION</td>
+                <td>JALAN BARU, PERAI, PENANG</td>
+            </tr>
+    
+            <tr class="evenRow">
+                <td>LAND TITLE</td>
+                <td>COMMERCIAL TITLE</td>    
+            </tr>
+    
+            <tr class="oddRow">
+                <td>LAND TENURE</td>
+                <td>FREE HOLD</td>
+            </tr>
+    
+            <tr class="evenRow">
+                <td>COMPLETION DATE</td>
+                <td>Q2 2024</td>
+            </tr>
+    
+            <tr class="oddRow">
+                <td>SIZE</td>
+                <td>STUDIO ( 441 SQFT )
+                    <br/>
+                    3 BEDROOM ( 1,050 SQFT - 1,445 SQFT )
+                </td>
+            </tr>
+    
+            <tr class="evenRow">
+                <td>LEVEL </td>
+                <td>38-STOREY</td>
+            </tr>
+    
+            <tr class="oddRow">
+                <td>TOWER </td>
+                <td>
+                    TOWER 1 - 230 UNIT 
+                    <br/>
+                    TOWER 2 - 259 UNIT
+                </td>
+            </tr>
+    
+            <tr class="evenRow">
+                <td>FLOOR UNIT </td>
+                <td>8-9 UNIT PER FLOOR </td>
+            </tr>
+    
+            <tr class="oddRow">
+                <td>LIFT </td>
+                <td>4 LIFT PER TOWER </td>
+            </tr>
+    
+            <tr class="evenRow">
+                <td>CAR PARK</td>
+                <td>2 - 3 CAR PARK </td>
+            </tr>
+        </table>
+        <p id="gallery"></p>
+    </div >
+
+
+    <p class="galleryTitle"  >GEM Resident Gallery & Facilities</p>
+    <div class="gallery" >
+
+        <img src="image/backgroundPic8.png" class="thumbnail" onclick="openPopup(0)">
+        <img src="image/backgroundPic2.png" class="thumbnail" onclick="openPopup(1)">
+        <img src="image/backgroundPic7.png" class="thumbnail" onclick="openPopup(2)">
+        <img src="image/backgroundPic1.png" class="thumbnail" onclick="openPopup(3)">  
+        <img src="image/descriptionPic1.png" class="thumbnail" onclick="openPopup(5)">
+        <img src="image/descriptionPic4.png" class="thumbnail" onclick="openPopup(6)">
+        <img src="image/backgroundPic3.png" class="thumbnail" onclick="openPopup(7)">
+        <img src="image/descriptionPic3.png" class="thumbnail" onclick="openPopup(8)">
+
+
+
+        <div id="popup" class="popup">
+            <button class="close-btn" onclick="closePopup()">X</button>
+            <button class="prev-btn" onclick="changeImage(-1)">&#8249;</button>
+            <div class="image-container">
+              <img id="popupImage" src="" alt="">
+              <p id="imageName"></p>
+            </div>
+            <button class="next-btn" onclick="changeImage(1)">&#8250;</button>
+          </div>
+
+
+
+
+    </div>
+    <button onclick="openWhatsapp()" class="btn-contact-gallery" >Download Brochure </button>
+
+
+    <div class="break-Introduce">
+        <div class="lounge">    <img src="image/lounge.png"     width="30%">  <h2>Sky Lounge</h2>           </div>
+        <div class="jacuzzi">   <img src="image/jacuzzi.png"    width="30%">  <h2>Jacuzzi</h2>              </div>
+        <div class="pool">      <img src="image/pool.png"       width="30%">  <h2>Olympic Ocean Pool</h2>   </div>
+        <div class="dumbbell">  <img src="image/dumbbell.png"   width="30%">  <h2>Signature GYM</h2>        </div>
+        <div class="karaoke">   <img src="image/karaoke.png"    width="30%">  <h2>KTV Room </h2>           <p  id="layout"></p> </div>
+        
+    </div>
+
+
+    
+
+    <div class="layout">
+            <h1 class="layoutTitle">UNIT FLOOR PLAN </h1>
+            <div class="layoutPic">
+                <div class="layoutPicRow">
+                    <img src="image/A1.png" alt="A1" style="width: 16.8%;" class="layout-thumbnail" onclick="openLayoutPopup(0)"> 
+                    <img src="image/B1.png" alt="B1" style="width: 26.5%;" class="layout-thumbnail" onclick="openLayoutPopup(1)">
+                    <img src="image/B2.png" alt="B2" style="width: 26.5%;" class="layout-thumbnail" onclick="openLayoutPopup(2)">
+                </div>
+                <div class="layoutPicRow">
+                    <img src="image/C1.png" alt="C1" style="width: 27.5%;" class="layout-thumbnail" onclick="openLayoutPopup(3)">
+                    <img src="image/C2.png" alt="C2" style="width: 24.1%;" class="layout-thumbnail" onclick="openLayoutPopup(4)">
+                    <img src="image/C3.png" alt="C3" style="width: 26.4%;" class="layout-thumbnail" onclick="openLayoutPopup(5)">
+                </div>
+            </div>
+
+
+
+            <div id="layoutPopup" class="layout-popup">
+                <button class="layout-close-btn" onclick="closeLayoutPopup()">X</button>
+                <button class="layout-prev-btn" onclick="changeLayoutImage(-1)">&#8249;</button>
+                <div class="layout-image-container">
+                  <img id="layoutPopupImage" src="" alt="">
+                  <p id="layoutImageName"></p>
+                </div>
+                <button class="layout-next-btn" onclick="changeLayoutImage(1)">&#8250;</button>
+              </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+        <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+      <!-- Left Column: Logo and Description -->
+      <div class="footer-left">
+        <img src="image/logo.png" alt="GEM Logo" class="footer-logo">
+        <p class="footer-description">
+          Unparalleled high ROI investment potential with GEM RESIDENT — a prime Perai, Penang freehold project.
+        </p>
+      </div>
+  
+      <!-- Middle Column: Redirect Links -->
+      <div class="footer-middle">
+        <h4>Redirect Link:</h4>
+        <ul class="footer-links">
+          <li><a href="#welcomeDiv">&#10148; Top Page</a></li>
+          <li><a href="#factsheet">&#10148; Factsheet</a></li>
+          <li><a href="#gallery">&#10148; Gallery</a></li>
+          <li><a href="#layout">&#10148; Layout</a></li>
+          <li><a href="#place">&#10148; Place</a></li>
+          <li><a href="#contactUs" onclick="openWhatsapp()">&#10148; Contact Us</a></li>
+        </ul>
+      </div>
+  
+      <!-- Right Column: Contact Icons -->
+      <div class="footer-right">
+        <h4>Contact Us Now:</h4>
+        <div class="footer-icons">
+          <a href="" onclick="callWhatsapp()"><img src="image/phone.png" alt="Phone"></a>
+          <a href="" onclick="callWhatsapp()"><img src="image/whatsapp-balck.png" alt="WhatsApp"></a>
+          <a href="" onclick="callWhatsapp()"><img src="image/email.png" alt="Email"></a>
+        </div>
+      </div>
+    </div>
+  
+  </footer>
+  
+
+
+</body>
+
+</html>
+
+

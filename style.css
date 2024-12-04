@@ -1,0 +1,1447 @@
+/* General HTML and Body Styling */
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    background-color: #fef2f8;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    display: flex;
+    background-color: rgba(38, 38, 38,1);
+    position: fixed;
+    transition: 0.2s linear;
+    z-index: 2;
+    top: 0;
+}
+
+.headerNav {
+    margin: 10px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.headerNav > a {
+    padding-left: 3%;
+    padding-right: 3%;
+    text-decoration: none;
+    margin: auto;
+    vertical-align: middle; 
+    text-align: center;
+    transition: linear 0.2s;
+    color: white;
+    cursor: pointer;
+}
+
+.headerNav > a:hover {
+    color: rgb(253, 132, 197);
+    font-size: large;
+}
+
+
+
+
+/* whatsappIconBottom */
+
+.whatsappIconBottom{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    transition: 0.2s linear;
+    cursor: pointer;
+    width: 4%;
+}
+
+.whatsappIconBottom:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+/* Welcome Section Background */
+.welcomeDiv {
+    float: left;
+    display: flex;  
+    background-image: url(image/sky.jpg);
+    background-size: cover;
+    position: relative;
+    top: -30px;
+    height: fit-content;
+    width: 100%;
+    z-index: 1;
+}
+
+.welcomeDescDiv {
+    display: block;
+    position: relative;
+    top: 150px;
+    height: fit-content;
+}
+
+.welcome {
+    position: relative;
+    text-align: right;
+    font-size: 3vw;
+    color: white;
+    width: 85%;
+    height: fit-content;
+}
+
+.welcomeDesc {
+    position: relative;
+    left: 10%;
+    text-align: left;
+    font-size: 1.2vw;
+    color: white;
+    display: block;
+    width: 80%;
+}
+
+/* Learn More Button Styling */
+.btnLearnMore {
+    position: relative;
+    height: 4vw;
+    width: 12vw;
+    color: black;
+    border: none;
+    border-radius: 75px;
+    background: white; 
+    left: 70%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.2s linear;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+.btnLearnMore:hover {
+    background-color: whitesmoke;
+    color: grey;
+    border: rgb(211, 211, 241) 1px solid;
+    transform: scale(0.85);
+}
+
+/* Small Info Section Styling */
+.smallInfo {
+    font-size: 3vw;
+    text-align: center;
+    color: white;
+}
+
+.smallInfoName {
+    font-size: 1vw;
+    text-align: center;
+    color: white;
+}
+
+.smallInfoDiv {
+    margin-left: 20px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.smallInfo1 {
+    width: 30%;
+    margin: 0;
+    float: left;
+    cursor: default;
+    transition: 0.2s linear;
+}
+
+.smallInfo1:hover{
+    transform: scale(1.15);
+}
+
+/* Advertisement Background Styling */
+.adBackground {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+    position: fixed;
+    z-index: 2;
+    text-align: center;
+    vertical-align: middle;
+    transition: 0.5s linear;
+    top: 0;
+}
+
+.ad{
+    margin-top: 10%;
+}
+
+
+
+.closeAd {
+    font-size: 15px;
+    transition: 0.2s linear;
+    cursor: pointer;
+    font-family: cursive;
+    color: black;
+    position: fixed;
+    right: 32%;
+}
+
+.closeAd:hover {
+    color: red;
+    transform: scale(1.2);
+}
+
+/* Advertisement Button Styling */
+.btn-advertisement {
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 250px; /* Adjust as needed */
+    height: 60px;
+    padding: 8px;
+    font-size: 1em;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-image: linear-gradient(90deg, #FF5F6D, #FFC371); /* Gradient background */
+    position: relative;
+}
+
+.btn-advertisement:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Whatsapp Introduction*/
+
+.whatsappBackground {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+    position: fixed;
+    z-index: 2;
+    text-align: center;
+    vertical-align: middle;
+    transition: 0.5s linear;
+    top: 0;
+    display: none;
+}
+
+.whatsapp-contact{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        width: 40%;
+        height: 35%;
+        border-radius: 5px;
+}
+
+.closeWhatsappIntro {
+    position: absolute;
+    right: 5%;
+    text-align: right;
+    font-size: 15px;
+    transition: 0.2s linear;
+    cursor: pointer;
+    font-family: cursive;
+}   
+
+.closeWhatsappIntro:hover {
+    color: red;
+    transform: scale(1.3);
+}
+
+/* Whatsapp Introduction Button Styling */
+.btn-whatsapp {
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%; /* Adjust as needed */
+    height: 20%;
+    padding: 8px;
+    font-size: 1.5vw;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: #45d49b; /* Gradient background */
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* WhatsApp Icon Styling */
+.whatsappIcon {
+    width: 30px;
+    height: 30px;
+    margin-top: 0px; /* Adjust spacing between text and icon */
+    vertical-align: middle;
+}
+
+.e-brochure-description{
+    width: 90%;
+    margin: 8% auto 5% auto;
+    vertical-align: middle;
+    transition: 0.2s linear;
+}
+
+.e-brochure-description h1{
+    font-size: 2.2vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.e-brochure-description p{
+    font-size: 1vw;
+    line-height: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Highlights Section */
+
+.highlightsTitle{
+    position: relative;
+    top: 20px;
+    font-size: 2.5vw;
+    color: black;
+    left: 10%;
+    z-index: -1;
+    font-family: 'Courier New', Courier, monospace;
+    width: fit-content;
+}
+
+
+.highlights{
+    display: block;
+    position: relative;
+}
+
+.highlightsDiv{
+    width: 80%;
+    margin: auto;
+}
+
+.highlightsDesc{
+    margin: 50px 0;
+    width: 40%;
+    font-size: 1.2vw;
+    line-height: 1.3;
+}
+
+
+
+.highlightsDiv {
+    /* Ensure the highlightsDiv takes the space it needs */
+    display: flex;
+    align-items: center;
+}
+
+.highlightsPointDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 59%;
+    text-align: center;
+    gap: 2%; /* Adjust spacing between items */
+}
+
+.highlightsPoint {
+    display: flex;
+    align-items: center; /* Vertically centers content */
+    justify-content: center; /* Horizontally centers content */
+    width: 18vw;
+    height: 10vw;
+    font-size: 1.5vw;
+    text-align: center;
+    border-radius: 25px;
+    margin: 4%;
+    transition: 0.2s linear;
+    cursor: default;
+}
+
+.highlightsPoint1{
+    display: flex;
+    align-items: center; /* Vertically centers content */
+    justify-content: center; /* Horizontally centers content */
+    width: 18vw;
+    height: 10vw;
+    font-size: 1.1vw;
+    text-align: left;
+    border-radius: 25px;
+    margin: 4%;
+    transition: 0.2s linear;
+    cursor: default;
+}
+
+
+.highlightsPoint:hover , .highlightsPoint1:hover{
+    transform: scale(1.1);
+}
+
+.freeHold {
+    margin-right: 5px;
+}
+
+
+/* Contact Section */
+.contact-background {
+    background-image: url(image/backgroundPic1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-background2 {
+    background-image: url(image/backgroundPic7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-background3 {
+    background-image: url(image/backgroundPic3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.contact-background-color {
+    background-color: rgba(42, 34, 34, 0.6);
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.contact-background-Title {
+    padding-top: 50px;
+    color: gold;
+    font-size: 2vw;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact-background-Desc {
+    color: white;
+    font-size: 4vw;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.btn-contact-background {
+    width: 30%;
+    height: 5vw;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 2vw;
+    border-radius: 55px;
+    border: none;
+    background-image: linear-gradient(120deg, #FF5F6D, #FFC371);
+    color: black;
+    transition: 0.2s linear;
+    opacity: 0.9;
+}
+
+.btn-contact-background:hover , 
+.btn-contact-gallery:hover  {
+    transform: scale(0.9);
+    opacity: 1;
+}
+
+.btn-contact-whatsapp{
+    vertical-align: middle;
+}
+
+/* Factsheet */
+
+.factsheet{
+    width: 80%;
+    margin: auto;
+}
+
+.factsheet>h1{
+    font-size: 2.5vw;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.factsheetTable{
+    position: relative;
+    width: 100%;
+    font-size: 1.2vw;
+    color: rgb(55, 52, 52);
+    margin: auto;
+}
+
+.factsheetTable td{
+    padding: 1% 0.5% 1% 3%;
+}
+
+.tableTitle{
+    background-color: #ffac37;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.evenRow{
+    background-color: #ffd497;
+}
+.oddRow{
+    background-color: #ffebd0;
+}
+.a{
+    border-radius: 20px 0 0 0;
+}
+.b{
+    border-radius:  0 20px 0 0;
+}
+
+
+/* break-Introduce */
+
+.break-Introduce{
+    background-color: rgb(38, 38, 38);
+    width: 100%;
+    margin-top: 30px;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 1.2vw;
+    cursor: default;
+}
+
+.break-Introduce div{
+    transition: 0.2s linear;
+}
+
+.break-Introduce div:hover{
+
+    transform: scale(1.1);
+}
+
+
+/* gallery */
+.gallery {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap; /* Allows images to wrap to the next row */
+    justify-content: center; /* Optional: centers the images */
+}
+
+
+
+.gallery img {
+    width: 100%; /* Adjust for responsiveness */
+    max-width: 600px;
+    margin: 10px;
+    transition: 0.3s linear;
+    cursor: default;
+    display: flex;
+}
+.gallery img:hover{
+    transform: scale(1.05);
+} 
+
+.galleryTitle{
+    margin: 60px auto;
+    text-align: center;
+    font-size: 3vw;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(38, 38, 38);
+    color: white;
+    padding: 50px;
+}
+
+.space{
+    margin-top: 50px;
+}
+
+.btn-contact-gallery {
+    width: 30%;
+    height: 5vw;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 2vw;
+    border-radius: 55px;
+    border: none;
+    background-image: linear-gradient(120deg, #f52e3f, #fbab3c);
+    color: white;
+    transition: 0.2s linear;
+    opacity: 0.9;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    margin-left: 35%;
+    margin-right: 35%;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+
+
+/* Gallery popup display */
+
+
+.thumbnail {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+
+
+
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  
+  .image-container {
+    position: relative;
+    text-align: center;
+    justify-items: center;
+  }
+
+
+
+  #popupImage {
+    max-width: 80%;
+    max-height: 700px;
+    border-radius: 10px;
+  }
+  
+  #imageName {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 18px;
+  }
+
+
+  .close-btn, .prev-btn, .next-btn {
+    position: fixed;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .close-btn {
+    top: 20px;
+    right: 20px;
+    transition: 0.2s linear;
+  }
+
+  .close-btn:hover{
+    color: red;
+  }
+
+  .prev-btn {
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 10vw;
+    transition: 0.2s linear;
+  }
+
+  .prev-btn:hover , .next-btn:hover{
+    color: rgb(250, 234, 155);
+  }
+
+  .next-btn {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 10vw;
+    transition: 0.2s linear;
+  }
+
+
+/* End Gallery popup display */
+
+
+/*end gallery*/
+
+
+/* Layout */
+
+
+.layoutTitle{
+    color: #EB0871;
+    font-size: 2vw;
+    text-align: left;
+    margin: 20px 0;
+    padding-left: 7%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* CSS */
+.layout {
+    text-align: center;
+    margin: 5% auto;
+    width: 100%;
+}
+
+.layoutTitle {
+    font-size: 2vw;
+    color: black; /* Adjust color to match the example */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.layoutPic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between rows */
+    width: 100%;
+}
+
+.layoutPic img{
+    transition: 0.2s linear;
+}
+.layoutPic img:hover{
+    transform: scale(1.1);
+}
+
+
+.layoutPicRow {
+    display: flex;
+    gap: 10px; /* Space between images in each row */
+    justify-content: center;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.layoutPic img {
+    /* Remove automatic sizing constraints */
+    height: auto;
+}
+
+
+
+/* layout popup display */
+.layout-thumbnail {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+.layout-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  .layout-image-container {
+    position: relative;
+    text-align: center;
+  }
+  
+  #layoutPopupImage {
+    max-width: 60%;
+    max-height: 80%;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  #layoutImageName {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .layout-close-btn, .layout-prev-btn, .layout-next-btn {
+    position: fixed;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+
+  .layout-close-btn {
+    top: 20px;
+    right: 20px;
+    transition: 0.2s linear;
+  }
+
+  .layout-close-btn:hover{
+    color: red;
+  }
+
+  .layout-prev-btn {
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 10vw;
+    transition: 0.2s linear;
+  }
+
+  .layout-prev-btn:hover , .layout-next-btn:hover{
+    color: rgb(250, 234, 155);
+  }
+
+  .layout-next-btn {    
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 10vw;
+    transition: 0.2s linear;
+  }
+
+
+
+/* End layout popup display */
+
+
+
+/*End Layout*/
+
+
+
+/* Place */
+.placeTitle{
+    font-size: 2vw;
+    margin-left: 5%;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.place{
+    margin: 20px auto 50px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.place iframe{
+    margin-top: 10px;
+
+}
+
+.placeTitle{
+    font-size: 2.5vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.placeDescription{
+    width: 40%;
+    font-size: 1.5vw;
+    line-height: 2;
+    vertical-align: middle;
+    padding-top: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+/* End Place*/
+
+
+/* Footer */
+
+
+/* Footer General Styles */
+.footer {
+    background-color: #ffd500;
+    color: #000;
+    text-align: center;
+    padding: 0;
+    margin-top: 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Left Column: Logo and Description */
+  .footer-left {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+  }
+  
+  .footer-logo {
+    width: 150px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+  
+  .footer-description {
+    font-size: 14px;
+    line-height: 1.6;
+    width: 80%;
+    text-align: left;
+    padding-left: 10px;
+  }
+  
+  /* Middle Column: Redirect Links */
+  .footer-middle {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+  }
+  
+  .footer-links {
+    list-style-type: none;
+    padding: 0;
+    line-height: 2;
+  }
+  
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  /* Right Column: Contact Icons */
+  .footer-right {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+  }
+  
+  .footer-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-icons img {
+    width: 40px;
+    height: 40px;
+    transition: 0.2s linear;
+  }
+
+  .footer-icons img:hover{
+    transform: scale(1.1);
+  }
+  
+  /* Bottom Section */
+  .footer-bottom {
+    margin-top: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 0;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .footer-bottom a {
+    color: #ffd500;
+    text-decoration: none;
+  }
+  
+
+/*End Footer*/
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+/* Medium screens - Header, Small Info, Advertisement */
+
+
+@media (max-width: 1400px) {
+    .gallery img{
+        max-width: 450px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+.whatsapp-contact{
+    width: 70%;
+    height: 35%;
+}
+.e-brochure-description p{
+font-size: 1.5vw;
+}
+
+}
+
+
+
+@media (max-width: 1070px) {
+    .smallInfoDiv {
+        margin-top: 5%;
+    }
+
+    .whatsappIconBottom{
+        width: 6%;
+    }
+
+    .gallery img{
+        max-width: 350px;
+    }
+
+}
+
+@media (max-width: 940px) {
+    .btn-advertisement {
+        width: 200px;
+        height: 50px;
+        font-size: 0.8em;
+    }
+    .whatsappIcon {
+        width: 25px;
+        height: 25px;
+    }
+
+}
+
+@media (max-width: 870px) {
+
+    .welcomeDiv {
+        top: -50px;
+    }
+
+    .welcomeDescDiv {
+        top: 90px;
+    }
+
+    .welcomeDesc{
+        font-size: 1.5vw;
+    }
+
+.btnLearnMore{
+    font-size: 1.5vw;
+}
+
+
+.highlightsDesc{
+    font-size: 1.5vw;
+
+}
+
+
+    .closeAd {
+        right: 15%;
+    }
+
+    .e-brochure-description h1{
+        font-size: 2.5vw;
+    }
+    
+
+    .e-brochure-description p{
+        font-size: 1.8vw;
+    }
+
+    .btn-whatsapp {
+        font-size: 1.8vw;
+    }
+    .e-brochure-description{
+        margin: 10% auto 7% auto;
+    }
+
+    .gallery img{
+        width: 40%;
+    }
+
+
+    .adImage{
+        width: 80%;
+    }
+
+    .place{
+        display: block;
+        text-align: center;
+    }
+
+    .place iframe{
+        width: 100%;
+    }
+
+    .placeDescription{
+        font-size: 2vw;
+        width: 90%;
+        margin: 10px auto auto auto;
+        padding: auto auto auto auto;
+    }
+
+    .placeTitle{
+        margin: 50px auto auto auto;
+        font-size: 3.5vw;
+        width: 80%;
+    }   
+
+    .factsheetTable{
+        font-size: 2vw;
+    }
+
+
+
+}
+
+@media (max-width: 800px) {
+    .welcomeDescDiv {
+        top: 90px;
+    }
+    .highlightsDesc{
+        font-size: 1.8vw;
+    }
+    .highlightsPoint,.highlightsPoint1{
+        font-size: 1.8vw;
+    }
+    .welcomeDesc{
+        font-size: 1.8vw;
+    }
+
+    .smallInfoDiv {
+        height: 150px;
+    }
+    .highlightsTitle {
+        top: 10px;
+    }
+    .highlightsDesc{
+        margin: 20px 0;
+    }
+
+    .btnLearnMore{
+        font-size: 1.5vw;
+    }
+
+    
+}
+
+@media (max-width: 690px) {
+    .btn-advertisement {
+        width: 150px;
+        height: 40px;
+        font-size: 0.6em;
+    }
+    .whatsappIcon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .e-brochure-description h1{
+        font-size: 2.5vw;
+    }
+        .btn-whatsapp {
+        font-size: 1.8vw;
+    }
+
+    .e-brochure-description p{
+        font-size: 2vw;
+    }
+
+    .whatsappIconBottom{
+        width: 10%;
+    }
+}
+
+@media (max-width: 660px) {
+    .highlightsPoint {
+        top: -70px;
+    }
+
+    .whatsapp-contact{
+        width: 100%;
+        height: 35%;
+}
+
+.e-brochure-description h1{
+    font-size: 3vw;
+}
+
+
+.e-brochure-description p{
+    font-size: 2vw;
+}
+
+.btn-whatsapp {
+    font-size: 2vw;
+}
+
+}
+
+
+
+@media (max-width: 620px) {
+.footer-container {
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.footer-left{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.footer-middle{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.footer-right{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+
+}
+
+
+
+@media (max-width: 530px) {
+    .smallInfoDiv {
+        margin-top: 0;
+    }
+
+
+    .e-brochure-description h1{
+        font-size: 3.2vw;
+    }
+    
+    
+    .e-brochure-description p{
+        font-size: 2.3vw;
+    }
+
+    .btn-whatsapp {
+        font-size: 2.5vw;
+    }
+
+    
+}
+
+
+@media (max-width: 470px) {
+
+    .e-brochure-description h1{
+        font-size: 3.5vw;
+    }
+    
+    
+    .e-brochure-description p{
+        font-size: 2.6vw;
+    }
+
+    .btn-whatsapp {
+        font-size: 3vw;
+    }
+
+    .e-brochure-description{
+        margin: 15% auto 7% auto;
+    }
+
+    .closeAd {
+        top: 3%;
+    }
+
+    .whatsappIconBottom{
+        width: 12%;
+    }
+
+}
+
+
+
+/* Slide in Fade in Function */
+
+
+
+/* Initial state before showing */
+
+/*From bottom to Top*/
+.welcomeDiv, .galleryTitle,.factsheetTitle{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2.6s ease, transform 2.6s ease;
+}
+
+
+/* From left to right */
+.highlightsDesc,.layoutTitle,.placeTitle,.placeDescription{
+    opacity: 0;
+    transform: translateX(-20%);
+    transition: opacity 3s ease, transform 3s ease;
+}
+
+
+/* From right to left */
+.highlightsPointDiv {
+    opacity: 0;
+    transform: translateX(20%);
+    transition: opacity 3s ease, transform 5s ease;
+}
+
+/* Fade In */
+
+.break-Introduce,.contact-background, .contact-background2,.contact-background3,.factsheetTable  {
+    opacity: 0;
+    transform: translateX(0);
+    transition: opacity 3s ease, transform 6s ease;
+}
+
+
+
+
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+    transform: translateX(0);
+}
+
+
+@media (max-width: 500px){
+
+/* Initial state before showing */
+
+/*From bottom to Top*/
+.welcomeDiv, .galleryTitle{
+    opacity: 0;
+    transform: translateY(0);
+    transition: opacity 2.6s ease, transform 2.6s ease;
+}
+
+
+/* From left to right */
+.highlightsDesc,.factsheetTitle,.layoutTitle,.placeTitle,.placeDescription{
+    opacity: 0;
+    transform: translateX(0);
+    transition: opacity 3s ease, transform 3s ease;
+}
+
+
+/* From right to left */
+.highlightsPointDiv{
+    opacity: 0;
+    transform: translateX(0);
+    transition: opacity 3s ease, transform 5s ease;
+}
+
+/* Fade In */
+
+.break-Introduce,.contact-background, .contact-background2,.contact-background3{
+    opacity: 0;
+    transform: translateX(0);
+    transition: opacity 3s ease, transform 6s ease;
+}
+
+
+
+
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+    transform: translateX(0);
+}
+
+}
